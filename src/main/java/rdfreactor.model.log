@@ -1,0 +1,105 @@
+
+JModel
+  JPackage org.datafairport.gen
+    JClass Thing1 -> http://www.w3.org/2000/01/rdf-schema#Class
+      extends: org.ontoware.rdfreactor.schema.rdfs.Class, 
+      comment: This class acts as a catch-all for all properties, for which no domain has specified.
+      Affiliation (-1/-1)  -> http://schema.org/affiliation, types: 'Thing1',. Inverse: Affiliation.
+      Contributor (-1/-1)  -> http://purl.org/dc/terms/contributor, types: 'Thing1',. Inverse: Contributor.
+      Creator (-1/-1)  -> http://purl.org/dc/terms/creator, types: 'Thing1',. Inverse: Creator.
+      Deprecated (-1/-1)  -> http://www.w3.org/2002/07/owl#deprecated, types: 'Thing1',. Inverse: Deprecated.
+      Extent (-1/-1)  -> http://purl.org/dc/terms/extent, types: 'Thing1',. Inverse: Extent.
+      Format (-1/-1)  -> http://purl.org/dc/terms/format, types: 'Thing1',. Inverse: Format.
+      Homepage (-1/-1)  -> http://xmlns.com/foaf/0.1/homepage, types: 'Thing1',. Inverse: Homepage.
+      Maker (-1/-1)  -> http://xmlns.com/foaf/0.1/maker, types: 'Thing1',. Inverse: Maker.
+      Modified (-1/-1)  -> http://purl.org/dc/terms/modified, types: 'Thing1',. Inverse: Modified.
+      Name (-1/-1)  -> http://xmlns.com/foaf/0.1/name, types: 'Thing1',. Inverse: Name.
+      Page (-1/-1)  -> http://xmlns.com/foaf/0.1/Page, types: 'Thing1',. Inverse: Page.
+      Part (-1/-1)  -> http://purl.org/dc/terms/hasPart, types: 'Thing1',. Inverse: Part.
+      Subject (-1/-1)  -> http://purl.org/dc/terms/subject, types: 'Thing1',. Inverse: Subject.
+      UsageNote (-1/-1)  -> http://purl.org/vocab/vann/usageNote, types: 'Thing1',. Inverse: UsageNote.
+    JClass Catalog -> http://www.w3.org/ns/dcat#Catalog
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, Catalog, 
+      comment: A curated collection of metadata about datasets
+مجموعة من توصيفات قوائم البيانات
+Una colección conservada de metadatos de conjuntos de datos
+Μια επιμελημένη συλλογή μεταδεδομένων περί συνόλων δεδομένων
+Une collection élaborée de métadonnées sur les jeux de données
+データ・カタログは、データセットに関するキュレートされたメタデータの集合です。
+      Dataset (-1/-1)  -> http://www.w3.org/ns/dcat#dataset, types: 'Dataset',. Inverse: Dataset.
+      Record (-1/-1)  -> http://www.w3.org/ns/dcat#record, types: 'CatalogRecord',. Inverse: Record.
+      Themetaxonomy (-1/-1)  -> http://www.w3.org/ns/dcat#themeTaxonomy, types: 'ConceptScheme',. Inverse: Themetaxonomy.
+    JClass Dataset -> http://www.w3.org/ns/dcat#Dataset
+      extends: DcmitypeDataset, org.ontoware.rdfreactor.schema.rdfs.Resource, Dataset, 
+      comment: A collection of data, published or curated by a single source, and available for access or download in one or more formats
+Una colección de datos, publicados o conservados por una única fuente, y disponibles para acceder o descagar en uno o más formatos
+قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها
+Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats
+Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές
+1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。
+      Contactpoint (-1/-1)  -> http://www.w3.org/ns/dcat#contactPoint, types: 'Kind',. Inverse: Contactpoint.
+      Datadictionary_Deprecated_ (-1/-1)  -> http://www.w3.org/ns/dcat#dataDictionary, types: 'Thing1',. Inverse: Datadictionary_Deprecated_.
+      Dataquality_Deprecated_ (-1/-1)  -> http://www.w3.org/ns/dcat#dataQuality, types: 'Thing1',. Inverse: Dataquality_Deprecated_.
+      Distribution (-1/-1)  -> http://www.w3.org/ns/dcat#distribution, types: 'Distribution',. Inverse: Distribution.
+      Granularity_Deprecated_ (-1/-1)  -> http://www.w3.org/ns/dcat#granularity, types: 'Thing1',. Inverse: Granularity_Deprecated_.
+      Keyword (-1/-1)  -> http://www.w3.org/ns/dcat#keyword, types: 'java.lang.String',. Inverse: Keyword.
+      Landingpage (-1/-1)  -> http://www.w3.org/ns/dcat#landingPage, types: 'Document',. Inverse: Landingpage.
+      Theme (-1/-1)  -> http://www.w3.org/ns/dcat#theme, types: 'Concept',. Inverse: Theme.
+    JClass CatalogRecord -> http://www.w3.org/ns/dcat#CatalogRecord
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, CatalogRecord, 
+      comment: A record in a data catalog, describing a single dataset.
+Un registre du catalogue ou une entrée du catalogue, décrivant un seul jeu de données
+Un registro en un catálogo de datos que describe un solo conjunto de datos.
+Μία καταγραφή ενός καταλόγου, η οποία περιγράφει ένα συγκεκριμένο σύνολο δεδομένων.
+1つのデータセットを記述したデータ・カタログ内のレコード。
+    JClass Distribution -> http://www.w3.org/ns/dcat#Distribution
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, Distribution, 
+      comment: Represents a specific available form of a dataset. Each dataset might be available in 
+          different forms, these forms might represent different formats of the dataset or different 
+          endpoints. Examples of distributions include a downloadable CSV file, an API or an RSS feed
+Representa una forma disponible y específica a un conjunto de datos. Cada conjunto de datos puede estar disponible en
+          formas diferentes, estas formas pueden representar formatos diferentes del conjunto de datos o puntos de acceso diferentes.
+شكل محدد لقائمة البيانات يمكن الوصول إليه. قائمة بيانات ما يمكن أن تكون متاحه باشكال و أنواع متعددة.  ملف يمكن تحميله أو واجهة برمجية يمكن من خلالها الوصول إلى البيانات هي أمثلة على ذلك.
+Αναπαριστά μία συγκεκριμένη διαθέσιμη μορφή ενός συνόλου δεδομένων. Κάθε σύνολο δεδομενων μπορεί να είναι διαθέσιμο σε 
+					διαφορετικές μορφές, οι μορφές αυτές μπορεί να αναπαριστούν διαφορετικές μορφές αρχείων ή διαφορετικά σημεία διάθεσης.
+					Παραδείγματα διανομών συμπεριλαμβάνουν ένα μεταφορτώσιμο αρχείο μορφής CSV, ένα API ή ένα RSS feed.
+Représente une forme spécifique d'un jeu de données. Caque jeu de données peut être disponible
+					sous différentes formes, celles-ci pouvant représenter différents formats du jeu de données ou différents endpoint. Des exemples de distribution
+					sont des fichirs CSV, des API ou des flux RSS.
+データセットの特定の利用可能な形式を表わします。各データセットは、異なる形式で利用できることがあり、これらの形式は、データセットの異なる形式や、異なるエンドポイントを表わす可能性があります。配信の例には、ダウンロード可能なCSVファイル、API、RSSフィードが含まれます。
+      AccessURL (-1/-1)  -> http://www.w3.org/ns/dcat#accessURL, types: 'org.ontoware.rdfreactor.schema.rdfs.Resource',. Inverse: AccessURL.
+      Bytesize (-1/-1)  -> http://www.w3.org/ns/dcat#byteSize, types: 'java.lang.String',. Inverse: Bytesize.
+      DownloadURL (-1/-1)  -> http://www.w3.org/ns/dcat#downloadURL, types: 'org.ontoware.rdfreactor.schema.rdfs.Resource',. Inverse: DownloadURL.
+      Mediatype (-1/-1)  -> http://www.w3.org/ns/dcat#mediaType, types: 'MediaTypeOrExtent',. Inverse: Mediatype.
+      Size_Deprecated_ (-1/-1)  -> http://www.w3.org/ns/dcat#size, types: 'Thing1',. Inverse: Size_Deprecated_.
+      Sizeinbytes_Deprecated_ (-1/-1)  -> http://www.w3.org/ns/dcat#bytes, types: 'java.lang.Integer',. Inverse: Sizeinbytes_Deprecated_.
+    JClass Feed_Deprecated_ -> http://www.w3.org/ns/dcat#Feed
+      extends: Distribution, org.ontoware.rdfreactor.schema.rdfs.Resource, Feed_Deprecated_, 
+      comment: represents availability of a dataset as a feed. This term has been deprecated
+    JClass WebService_Deprecated_ -> http://www.w3.org/ns/dcat#WebService
+      extends: Distribution, org.ontoware.rdfreactor.schema.rdfs.Resource, WebService_Deprecated_, 
+      comment: represents a web service that enables access to the data of a dataset. This term has been deprecated
+    JClass Download_Deprecated_ -> http://www.w3.org/ns/dcat#Download
+      extends: Distribution, org.ontoware.rdfreactor.schema.rdfs.Resource, Download_Deprecated_, 
+      comment: represents a downloadable distribution of a dataset. This term has been deprecated
+    JClass Vocabulary -> http://purl.org/vocommons/voaf#Vocabulary
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, Vocabulary, 
+      comment: 
+    JClass ConceptScheme -> http://www.w3.org/2004/02/skos/core#ConceptScheme
+      extends: ConceptScheme, org.ontoware.rdfreactor.schema.rdfs.Resource, 
+      comment: 
+    JClass DcmitypeDataset -> http://purl.org/dc/dcmitype/Dataset
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, DcmitypeDataset, 
+      comment: 
+    JClass Concept -> http://www.w3.org/2004/02/skos/core#Concept
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, Concept, 
+      comment: 
+    JClass Kind -> http://www.w3.org/2006/vcard/ns#Kind
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, Kind, 
+      comment: 
+    JClass Document -> http://xmlns.com/foaf/0.1/Document
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, Document, 
+      comment: 
+    JClass MediaTypeOrExtent -> http://purl.org/dc/terms/MediaTypeOrExtent
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, MediaTypeOrExtent, 
+      comment: 

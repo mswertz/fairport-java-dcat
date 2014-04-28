@@ -10,6 +10,11 @@ import com.hp.hpl.jena.graph.Node;
  */
 public class Catalog
 {
+	public final static String TITLE = "title";
+	public final static String ISSUED = "issued";
+	public final static String MODIFIED = "modified";
+	public final static String HOMEPAGE = "homepage";
+
 	private final Node subject;
 	private Node title;
 	private Node homePage;

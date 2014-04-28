@@ -7,6 +7,14 @@ import com.hp.hpl.jena.graph.Node;
  */
 public class Dataset
 {
+	public final static String TITLE = "title";
+	public final static String IDENTIFIER = "identifier";
+	public final static String SOURCE = "source";
+	public final static String DESCRIPTION = "description";
+	public final static String ISSUED = "issued";
+	public final static String MODIFIED = "modified";
+	public final static String RIGHTS = "rights";
+
 	private final Node subject;
 	private Node identifier;
 	private Node source;
